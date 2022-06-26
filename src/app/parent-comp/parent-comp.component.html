@@ -1,0 +1,5 @@
+<div style="text-align: center;">
+<h1>Component Intration Parent Component</h1>
+ <h2>{{message}}</h2>
+</div>
+<app-child-comp (childEvent)="message=$event" [parentData]="name"></app-child-comp>
