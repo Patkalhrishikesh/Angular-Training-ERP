@@ -1,5 +1,7 @@
 <div class="panel panel-primary">
-  <div class="panel-heading"> {{ element.name }} </div>
+  <!-- <div class="panel-heading"> {{ element.name }} </div> -->
+  <div class="panel-heading"> {{ name }} </div>
+
   <div class="panel-body">
       <p>
           <strong *ngIf="element.type === 'server'" style="color: rgb(238, 18, 18)">{{ element.content }}</strong>

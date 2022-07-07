@@ -33,5 +33,10 @@ export class ServerComponent implements OnInit {
 
 }
 
+onChangeFirst(){
+  this.serverElements[0].name = 'changed !';
+
+}
+
 
 }

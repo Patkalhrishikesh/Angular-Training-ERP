@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule,routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,12 @@ import { ChildCompComponent } from './child-comp/child-comp.component';
 import { ParentCompComponent } from './parent-comp/parent-comp.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { GameComponent } from './game/game.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { EvenComponent } from './even/even.component';
+import { OddComponent } from './odd/odd.component';
+import { DepartmentDetailComponent } from './department-detail/department-detail.component';
+import { TDFComponent } from './tdf/tdf.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +38,22 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     ChildCompComponent,
     ParentCompComponent,
     PipesComponent,
-    EmployeeDetailsComponent
+    EmployeeDetailsComponent,
+    GameComponent,
+    GameControlComponent,
+    EvenComponent,
+    OddComponent,
+    DepartmentDetailComponent,
+    TDFComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FormsModule,
     AppRoutingModule,
     NgbModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
