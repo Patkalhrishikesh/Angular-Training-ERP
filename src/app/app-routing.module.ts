@@ -9,8 +9,10 @@ import { GameComponent } from './game/game.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ParentCompComponent } from './parent-comp/parent-comp.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { ServerComponent } from './server/server.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { TDFComponent } from './tdf/tdf.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/departments', pathMatch: 'full'},
@@ -24,8 +26,9 @@ const routes: Routes = [
 {path: 'component-interation', component: ParentCompComponent },
 {path: 'pipes', component: PipesComponent },
 {path: 'game', component: GameComponent },
+{path: 'tdf', component: TDFComponent },
+{path: 'reactive-forms', component: ReactiveFormsComponent },
 {path: "**", component: PageNotFoundComponent }
-
 ];
 
 @NgModule({
@@ -45,5 +48,7 @@ export const routingComponents = [
   ParentCompComponent,
   PipesComponent,
   GameComponent,
+  TDFComponent,
+  ReactiveFormsComponent,
   PageNotFoundComponent
 ];

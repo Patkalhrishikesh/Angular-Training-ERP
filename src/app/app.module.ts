@@ -9,7 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { ServerComponent } from './server/server.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
@@ -23,6 +23,7 @@ import { EvenComponent } from './even/even.component';
 import { OddComponent } from './odd/odd.component';
 import { DepartmentDetailComponent } from './department-detail/department-detail.component';
 import { TDFComponent } from './tdf/tdf.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -44,10 +45,12 @@ import { TDFComponent } from './tdf/tdf.component';
     EvenComponent,
     OddComponent,
     DepartmentDetailComponent,
-    TDFComponent
+    TDFComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
